@@ -1,0 +1,41 @@
+[config.wallpaper]
+command = "awww img {{image}}"
+set = true
+
+
+[templates.btop]
+input_path = '/home/karon/.config/btop/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
+
+[templates.fuzzel]
+input_path = '/home/karon/.config/fuzzel/fuzzel.ini'
+output_path = '~/.config/fuzzel/colors.ini'
+
+[templates.niri]
+input_path = '/home/karon/.config/niri/niri-colors.kdl'
+output_path = '~/.config/niri/colors.kdl'
+post_hook = 'niri msg action load-config-file'
+
+[templates.yazi]
+input_path = '/home/karon/.config/yazi/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.kitty]
+input_path = '/home/karon/.config/kitty/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.alacritty]
+input_path = '/home/karon/.config/alacritty/alacritty.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.helix]
+input_path = '/home/karon/.config/helix/helix.toml'
+output_path = '~/.config/helix/themes/matugen.toml'
+
+[templates.prismlauncher]
+input_path = '/home/karon/.config/prismlauncher/prismlauncher.json'
+output_path = '~/.local/share/PrismLauncher/themes/Matugen/theme.json'
+
